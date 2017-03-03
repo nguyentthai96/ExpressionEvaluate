@@ -12,6 +12,13 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
 
+import com.nguyenthanhthai.tokens.FunctionToken;
+import com.nguyenthanhthai.tokens.NumberToken;
+import com.nguyenthanhthai.tokens.OperatorToken;
+import com.nguyenthanhthai.tokens.Token;
+import com.nguyenthanhthai.tokens.VariableToken;
+import com.nguyenthanhthai.tokens.operator.Operator;
+
 public class Expression {
 
     private final Token[] tokens;
@@ -20,6 +27,7 @@ public class Expression {
 
     private final Set<String> userFunctionNames;
 
+    //Ánh xạ các hằng biến giá trị
     private static Map<String, Double> createDefaultVariables() {
         final Map<String, Double> vars = new HashMap<String, Double>(4);
         vars.put("pi", Math.PI);

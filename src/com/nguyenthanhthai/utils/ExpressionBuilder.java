@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import com.nguyenthanhthai.tokens.operator.Operator;
+
 public class ExpressionBuilder {
 
     private final String expression;

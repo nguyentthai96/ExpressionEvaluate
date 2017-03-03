@@ -6,6 +6,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
 
+import com.nguyenthanhthai.tokens.OperatorToken;
+import com.nguyenthanhthai.tokens.Token;
+import com.nguyenthanhthai.tokens.Tokenizer;
+import com.nguyenthanhthai.tokens.operator.Operator;
+
 public class ShuntingYard {
 
     /**
